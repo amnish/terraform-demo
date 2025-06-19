@@ -43,7 +43,7 @@ pipeline {
            archiveArtifacts artifacts: '**/*.tfstate*', allowEmptyArchive: true
        }
        failure {
-           mail to: 'amnish90@gamil.com',
+           mail to: 'username@gamil.com',
                 subject: "Terraform Jenkins Pipeline Failed",
                 body: "Something went wrong in the pipeline. Check Jenkins for details."
        }
